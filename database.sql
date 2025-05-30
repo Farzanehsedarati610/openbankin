@@ -1,0 +1,7 @@
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    account VARCHAR(50) NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
